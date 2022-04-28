@@ -9,5 +9,6 @@ type AboutController struct {
 }
 
 func (c *AboutController) Get() {
-	c.TplName = "about.tpl"
+	c.Data["Title"] = "Page About"
+	c.TplName = "about/content.tpl"
 }
